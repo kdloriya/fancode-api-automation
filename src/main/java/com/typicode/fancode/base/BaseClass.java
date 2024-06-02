@@ -45,7 +45,7 @@ public class BaseClass {
 		return todos;
 	}	
 	
-	public static float expPercentage() {
+	public float expPercentage() {
 		String userInput = prop.getProperty("expUsersWithCompltedTasks"); 
 		float expFloat = 0;
 		String[] expPer = userInput.split("%");

@@ -29,6 +29,8 @@ public class UsersHavingTodoTasks extends BaseClass {
 				userCompletedTasks++;
 			}			
 		}
+		System.out.println("User having completed tasks : " + (int)userCompletedTasks + " out of " + totalFanCodeUsers);
+		System.out.println();
 		float completedTaskPer = (float)((userCompletedTasks * 100)/totalFanCodeUsers);
 		return completedTaskPer;
 	}

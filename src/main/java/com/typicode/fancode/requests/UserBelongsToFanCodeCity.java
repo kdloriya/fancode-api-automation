@@ -17,7 +17,7 @@ public class UserBelongsToFanCodeCity extends BaseClass {
 	}
 	
 	public ArrayList<Integer> fanCodeCityUser() {
-		String userString = users();
+	String userString = users();
 	Response res =  RestAssured.get(userString);
 	JsonPath jsonData = res.jsonPath();
 	
@@ -37,6 +37,8 @@ public class UserBelongsToFanCodeCity extends BaseClass {
 			 fanCodeCityUsers.add(Integer.parseInt(idString));
 		 }
 	}
+	System.out.println();
+	System.out.println("User belonging to the city: " + fanCodeCityUsers.size());
 	return fanCodeCityUsers;
 	
 	}
